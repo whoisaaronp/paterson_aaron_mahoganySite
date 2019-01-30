@@ -1,0 +1,773 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*Remove this rule, this is only for demo purposes to make the boxes black with white text
+The line height on the <p> tag gives each box a height value*/
+
+
+/*basic reset*/
+/*browsers have built in values for elements so we'll reset a few things to zero, you can add to this or remove items as needed*/
+
+div,p,body,header,footer,section,article,nav{ 
+	margin: 0; 
+	padding: 0; 
+}	
+
+img{ 
+	border: none; /*Remove border if image is a link*/
+	margin: 0; 
+	padding: 0; 
+}
+
+/*html selectors*/
+/* Declare the font family as Encode Sans Condensed hence further hooray!! */
+
+body{
+	font-family: 'Encode Sans Condensed', sans-serif;
+}
+
+p{
+		font-family: 'Encode Sans Condensed', sans-serif;
+}
+
+.hidden{
+	display: none;
+}
+
+/* Stars for product page */
+.checked {
+    color: #ff6347;
+}
+
+/* site container */
+#siteContainer{
+	margin: 0 auto;
+	width: 1240px;
+	padding-left: 20px;
+	padding-right: 20px;
+
+}
+
+/*This is a flex container */
+#mainHeader{
+	margin-top: 40px;
+	display: flex;
+	flex-direction: row;
+  	justify-content: flex-start;
+
+}
+
+/* push the nav to the right */
+.navCon{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin-bottom: 90px;
+	
+}
+
+/* Main Navigation start */
+#mainNav{
+	width: 624px;
+	height: 47px;
+	margin-left: 70px;
+	margin-right: 70px;
+	display: inline-block;
+}
+
+#mainNav li{
+	display: inline-block;
+	margin-left: 60px;
+	letter-spacing: 0.09em;
+	
+}
+
+#mainNav li a{
+		-webkit-transition: color 0.5s ease-out;
+  	-moz-transition: color 0.5s ease-out;
+  	-o-transition: color 0.5s ease-out;
+  	transition: color 0.5s ease-out;
+	text-decoration: none;	
+	color: #808080;
+}
+
+#mainNav li a:hover{
+	color: #ff6347; /* Pinky Orange Red */
+
+}
+
+/*This is a flex for logo */
+#logo{	
+	width: 250px;
+	height: 47px;
+}
+
+#socialCopyCon{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+}
+
+#socialMedia{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+#socialMedia ul li{
+	filter: gray; /*for IE6-9*/
+	-webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
+	list-style: none;
+	display: inline;
+	padding: 7px;
+	align-items: center;
+}
+
+#socialMedia ul li:hover{	
+  filter: none;
+  -webkit-filter: grayscale(0%);
+}
+
+/* Hero title in white  position relative wrapper */
+.heroImage{
+	position: relative;
+	margin-bottom: 40px;
+
+}
+
+/* Image Width and Height */
+#hero{
+	width: 1240px;
+	height: 560px;
+
+}
+
+/* Hero Positioning */
+.heroTitle{
+	position: absolute;
+	left: 70px;
+	bottom: 3px;
+
+}
+
+
+/* Title text */
+#heroCon{
+	width: 420px;
+	font-family: 'Inknut Antiqua', serif;
+	line-height: 100px;
+	color: #fff;
+	font-size: 95px;
+	font-weight: 700;
+	letter-spacing: 0.01em;
+
+}
+/* Hero Section End */
+
+/* Why Us Content */
+.bioCon{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding-top: 100px;
+	height: 750px
+
+}
+
+/* Body text */
+.whyCon p{
+	/*margin-left: 70px;*/
+	width: 370px;
+	font-size: 16px;
+	font-weight: 200;
+	line-height: 28px;
+	letter-spacing: 0.01em;
+	color: #808080;
+}
+
+#whyTitle{
+	font-family: 'Inknut Antiqua', serif;
+	font-weight: 700;
+	color: #808080;
+	font-size: 30px;
+}
+
+
+/* Image wrapper to the right side */
+.imageCon{
+	position: relative;
+	margin-top: 110px;
+
+}
+
+/* Light Fixture Image */
+#imageOne{
+	position: absolute;
+	top: 365px;
+	left: 34px;
+	width: 498px;
+	height: 332px;
+	z-index: 1;
+
+
+}
+
+/* Image of Whiet chair */
+#imageTwo{
+	width: 800px;
+	height: 356px;
+
+}
+
+/* End of why us */
+
+/* Start collecion section */
+.collectCon{
+	margin-bottom: 240px;
+
+}
+
+
+/* Section title */
+#collectTitle h2{
+	font-family: 'Inknut Antiqua', serif;
+	font-weight: 700;
+	color:#808080;
+	font-size: 30px; 
+
+}
+
+/* Collections section */
+.relatedCon{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	padding: 0px;
+	margin: 0px;
+
+}
+
+/* Related Products box space */
+.related{
+	width: 270px;
+	height: 482px;
+	border-style: solid 1px;
+	border-color: #ededed;
+}
+
+.relatedTitle{
+	margin-top: 100px;
+
+}
+
+.related img{
+	width: 200px;
+	height: 200px;
+	margin-top: 34px;
+	margin-left: 36px;
+	margin-right: 10px;
+}
+
+.related h3{
+	margin-top: 60px;
+	letter-spacing: 0.1em;
+	text-align: center;
+
+}
+
+.related p{
+	font-weight: 500;
+	font-size: 20px;
+	margin-top: 50px;
+	text-align: center;
+
+}
+/* End Collection */
+.aboutUs{
+
+	min-width: 370px;
+	max-width: 400px;
+	min-height: 350px;
+	max-height: 600px;
+	margin-bottom: 180px;
+
+}
+
+.aboutUs h2{
+	font-family: 'Inknut Antiqua', serif;
+	font-weight: 700;
+	font-size: 30px;
+	color:#808080;
+	
+}
+
+
+.aboutUs p{
+	width: 370px;
+	font-size: 16px;
+	font-weight: 200;
+	line-height: 28px;
+	letter-spacing: 0.01em;
+	color: #808080;
+}
+
+
+.imageMain{
+	position: relative;
+	margin-left: 560px;
+
+}
+
+/* Image of office space */
+#imageThree{
+	position: absolute;
+	width: 525px;
+	height: 300px;
+	top: 140px;
+	bottom: 7px;
+	left: 110px;
+	z-index: -1;
+
+}
+
+/* Image of gray freature sofa */
+#imageFour{
+	position: absolute;
+	top: 115px;
+	width: 568px;
+	height: 379px;
+	
+
+}
+
+/* Specific selector for spacing the product & titles */
+.newsLetterMain{
+	width: 1190px;
+	height: 245px;
+	padding: 25px 0 110px 50px;
+	background-color: #ff6347;
+	
+}
+
+.newsLetterCon p{
+	letter-spacing: 0.03em;
+	width: 430px;
+	height: 90px;
+	line-height: 34px;
+	font-size: 23px;
+	color: #fff;
+
+}
+
+.newsLetterCon{
+	padding: 0px;
+	margin: 0px;
+
+}
+
+#newsletterTitle{
+	font-family: 'Inknut Antiqua', serif;
+	font-size: 47px; 
+	font-weight: 700;
+	color: #fff;
+	margin-top: 10px;
+	margin-bottom: 0px;
+}
+
+input{
+	font-size: 14px;
+	padding: 18px;
+	margin-top: 0px;
+	margin-bottom: 20px;
+	border: 1px solid #fff;
+	background-color: #fff;
+}
+
+/* Newsletter */
+#submit{
+	width: 100px;
+	height: 55px;
+	padding: 10px;
+	margin-top: 0px;
+	margin-bottom: 5px;
+	background-color: #0da11a;
+	color: #fff;
+	border: solid 1px #0da11a;
+}
+
+/* Main Footer Flex*/
+.footerMain{
+	text-decoration: none;
+	list-style: none;
+
+}
+
+.footerCon ul{
+	list-style-type: none;
+	font-size: 16px;
+	letter-spacing: 0.09em;
+	text-decoration: none;
+	padding-left: 0px;
+
+}
+
+/* align navigation in a row */
+.footerNav{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	margin-top: 50px;
+	
+	
+}
+/* remove bullet points */
+.footerNav ul li a{
+	text-decoration: none;
+	line-height: 30px;
+	color: #808080;
+	
+	
+}
+
+/* Remove the dots on the links attritubes */
+.footerNav a{
+	color: #ff6347;
+	text-decoration: none;
+	letter-spacing: 0.1em;
+
+}
+
+/* Footer Titles */
+#navigations{
+
+	text-decoration: none;
+	margin-left: 90px;
+
+}
+
+#categories{
+	width: 115px;
+	margin-left: 90px;
+
+}
+
+#collections{
+	width: 20px;
+	margin-left: 90px;
+
+}
+
+/* Footer copyright */
+.copyRight p{
+	display: block;
+	margin-top: 100px;
+	width: 1240px;
+	padding-bottom: 10px;
+	padding-top: 10px; 
+	border-top: solid 1px #d6d6d6;
+	font-size: 12px;
+	font-weight: 500;
+	letter-spacing: 0.01em;
+	color: #808080;
+
+}
+
+/* Collections Page */
+/* Main Products section start */
+.mainProduct{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	vertical-align: top;
+	margin-bottom: 200px;
+
+}
+
+.mainProductCon{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+
+}
+
+/* product nav flow */
+#mainProductNav li{
+	text-decoration: none;
+	display: inline-block;
+	margin-left: 20px;
+	margin-bottom: 70px;
+	letter-spacing: 0.09em;
+	font-size: 12px;
+	font-weight: 500;
+	
+}
+
+#mainProductNav ul li a{
+		-webkit-transition: color 0.5s ease-out;
+  	-moz-transition: color 0.5s ease-out;
+  	-o-transition: color 0.5s ease-out;
+  	transition: color 0.5s ease-out;
+	text-decoration: none;
+	color: #808080;
+	
+}
+
+/* Hover event */
+#mainProductNav ul li a:hover{
+	text-decoration: none;
+	color: #ff6347; 
+
+}
+
+
+
+/* Image shadow and sizing of red chair */
+.mainProductImage{
+	width: 400px;
+	height: 400px;
+	padding: 20px;
+	box-shadow: -10px 57px 59px -7px rgba(11, 54, 67, 0.12),0 0px 0px 0 rgba(0,50,40,0);
+/*	box-shadow: 0 15px 30px 0 rgba(0,0,0,0.08),0 5px 15px 0 rgba(0,0,0,0.0);
+*/
+}
+
+.mainImageDesc{
+	width: 455px;
+	height: 531px;
+	margin-left: 80px;
+
+}
+
+.mainImageDesc h2{
+	letter-spacing: 0.09em;
+	font-size: 30px;
+	font-weight: 700;
+	color: #808080;
+
+}
+
+.mainImageDesc p{
+	font-size: 16px;
+	font-weight: 200;
+	line-height: 28px;
+	letter-spacing: 0.01em;
+	color: #808080;
+	padding-bottom: 40px;
+}
+
+/* Product price */
+.amount{
+	text-align: center;
+	width: 133px;
+	border: 1px solid #808080;
+}
+
+
+#productAmount{
+	display: block;
+	letter-spacing: 0.09em;
+	font-size: 24px;
+	font-weight: 500;
+	padding-bottom: 40px;
+	margin: 0;
+}
+
+/* add button styling shadoow glow */
+.addBut{
+	width: 170px;
+	height: 55px;
+	padding: 18px;
+	margin-top: 0px;
+	margin-bottom: 5px;
+	background-color: #0da11a;
+	color: #fff;
+	border: none;
+	box-shadow: 0px 17px 18px -8px rgba(2, 206, 17, 0.38),0px 45px 141px 30px rgba(18, 216, 35, 0.2);
+
+
+
+}
+
+/* Hover color for add cart button */
+.addBut:hover{
+	width: 170px;
+	height: 55px;
+	padding: 18px;
+	margin-top: 0px;
+	margin-bottom: 5px;
+	background-color: #057807;
+	border: none;
+
+}
+
+/* wish list styling */
+.addWish{
+	width: 138px;
+	padding: 20px;
+	margin-left: 20px;
+	background-color: #d6d6d6;
+	color: #646464;
+	border: none;
+}
+
+/* Hover Color for add to wishlist */
+.addWish:hover{
+	width: 138px;
+	padding: 20px;
+	margin-left: 20px;
+	background-color: #b3b3b3;
+	color: #fff;
+	border: none;
+}
+/* Add to cart end */
+
+
+/* Customers content begin */
+
+.customerCon{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	text-align: center;
+	margin-bottom: 190px; 
+	/* To lie side by side div's with flex containers 
+	via a 'column' with flex*/
+}
+
+.customerBut{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+
+}
+
+.customerBut{
+
+	letter-spacing: 0.09em;
+	font-size: 16px;
+	font-weight: 200;
+	color: #808080;
+	margin-bottom: 20px;
+}
+
+/* remove text decoration */
+.customerBut a{
+	color: #808080;
+	text-decoration: none;
+
+}
+
+.customerText p{
+	padding-left: 110px;
+	padding-right: 110px;
+	font-size: 16px;
+	font-weight: 200;
+	line-height: 28px;
+	letter-spacing: 0.01em;
+	color: #808080;
+	padding-top: 20px;
+	border-top: 1px solid #808080;
+
+}
+
+/* left button */
+#warranty a h3{
+	-webkit-transition: color 0.5s ease-out;
+  	-moz-transition: color 0.5s ease-out;
+  	-o-transition: color 0.5s ease-out;
+  	transition: color 0.5s ease-out;
+	width: 550px;
+	padding: 30px;
+	margin: 0px;
+
+}
+
+#warranty a h3:hover{
+	width: 550px;
+	padding: 30px;
+	margin: 0px;
+	color: #fff;
+	background-color: #ff6347;
+}
+
+
+/* right button */
+#reviews a h3{
+	-webkit-transition: color 0.5s ease-out;
+  	-moz-transition: color 0.5s ease-out;
+  	-o-transition: color 0.5s ease-out;
+  	transition: color 0.5s ease-out;
+	width: 550px;
+	padding: 30px;
+	margin: 0px;
+}
+
+#reviews a h3:hover{	
+	width: 550px;
+	padding: 30px;
+	margin: 0px;
+	color: #fff;
+	background-color: #ff6347;
+}
+
+
+/* Blog section */
+
+.blogCon{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	width: 1240px;
+	letter-spacing: 0.08em; 
+}
+
+/* Stack pages */
+.featureCon{
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 40px;
+
+}
+
+.feaureCon p{
+	margin-bottom: 20px;
+	letter-spacing: 0.09em;
+	font-size: 12px;
+	font-weight: 500;
+}
+
+
+.featureCon p{
+	width: 900px; 
+	font-size: 16px;
+	font-weight: 200;
+	line-height: 28px; 
+	letter-spacing: 0.09em;
+	color:#808080;
+	margin-bottom: 10px;
+	
+}
+
+#featureTitle{
+	font-family: 'Inknut Antiqua', serif;
+	font-weight: 700;
+	font-size: 30px;
+	color:#808080;
+	margin-top: 10px;
+	margin-bottom: 0px;
+	padding: 0px;
+	
+
+}
+
+.datetime{
+	font-weight: 200;
+	font-size: 12px;
+	
+}
+
+
+
